@@ -8,12 +8,22 @@ public class SimpleTreeNode extends TreeNode	{
 	}
 
 	public void inFixPrint()	{
-	    System.out.print(label);
+	    printLabel();
 	}
 
     @Override
     public void postFixPrint() {
-        System.out.print(label);
+        printLabel();
+    }
+
+    @Override
+    public void preFixPrint() {
+        printLabel();
+    }
+
+    private void printLabel()
+    {
+	    System.out.print(label);
     }
 
     @Override

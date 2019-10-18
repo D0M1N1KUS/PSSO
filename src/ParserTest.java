@@ -11,6 +11,8 @@ public class ParserTest
         rootNode.inFixPrint();
         System.out.println("\npostFixPrint:");
         rootNode.postFixPrint();
+        System.out.println("\npreFixPrint:");
+        rootNode.preFixPrint();
         System.out.println();
 
         try{

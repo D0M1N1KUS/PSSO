@@ -35,6 +35,13 @@ public class BinaryTreeNode extends TreeNode
     }
 
     @Override
+    public void preFixPrint() {
+        System.out.print(label);
+        left.postFixPrint();
+        right.postFixPrint();
+    }
+
+    @Override
     public double evaluate() throws Exception {
         return operation(left.evaluate(), right.evaluate());
     }
