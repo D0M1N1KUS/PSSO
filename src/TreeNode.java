@@ -1,13 +1,13 @@
 package src;
 //abstract superclass of tree element types
 
-public abstract class TreeNode  {
+public abstract class TreeNode	{
 
-  protected TreeNode(String label)  {
-    this.label = label;
-  }
+	protected TreeNode(String label)	{
+		this.label = label;
+	}
 
-  public abstract void inFixPrint();
+	public abstract void inFixPrint();
 
-  protected String label;
+	protected String label;
 }

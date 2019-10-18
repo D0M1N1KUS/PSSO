@@ -1,24 +1,31 @@
 package src;
 //Tree node that contains two children
 
-public class BinaryTreeNode extends TreeNode  {
+public class BinaryTreeNode extends TreeNode
+{
+	private TreeNode left, right;
 
-  public BinaryTreeNode(String label) {
-    super(label);
-    left = right = null;
-  }
+	public BinaryTreeNode(String label) {
+		super(label);
+		left = right = null;
 
-  public BinaryTreeNode(String label, TreeNode left, TreeNode right) {
-    super(label);
-    this.left = left;
-    this.right = right;
-  }
+	}
 
+	public BinaryTreeNode(String label, TreeNode left, TreeNode right) {
+		super(label);
+		this.left = left;
+		this.right = right;
+	}
 
-  public void inFixPrint()  {
-  //print the bracketed infix version of the expression
-  }
+    public void inFixPrint() {
+	    System.out.print("( ");
 
-  private TreeNode left, right;
+        left.inFixPrint();
+        System.out.print(' ' + label + ' ');
+        right.inFixPrint();
+
+        System.out.print(" )");
+    }
+
 
 }
