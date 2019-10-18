@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Parser {
 
 	private StringTokenizer lexAnalyser;
-	private String[] operators = new String[]{"+", "-", "*", "/"};
+	private String[] operators = new String[]{"+", "-", "*", "/", "%"};
 	private Stack<TreeNode> treeStack;
 	private Stack<String> operatorStack;
 
@@ -88,6 +88,8 @@ public class Parser {
             return 1;
         else if (op.equals("-"))
             return 1;
+        else if (op.equals("%"))
+            return 3;
         else
             return -1;
     }

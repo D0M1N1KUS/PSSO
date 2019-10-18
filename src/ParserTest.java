@@ -5,8 +5,19 @@ public class ParserTest
     public static void main(String[] args)	{
         Parser parser = new Parser();
         TreeNode rootNode = parser.parse("1 + ( 2 - 3 * 4 ) / 5");// spaces are vital!!;
+        TreeNode otherRootNode = parser.parse("1 + 5 % 3");
 
         rootNode.inFixPrint();
+        System.out.println();
+
+        try{
+            System.out.println("Evaluation: " + String.valueOf(rootNode.evaluate()));
+            System.out.println("Evaluation: " + String.valueOf(otherRootNode.evaluate()));
+        }
+        catch (Exception e)
+        {
+            System.out.print(e);
+        }
 //		System.out.println("");
 //		rootNode.preFixPrint();
 //		System.out.println("");

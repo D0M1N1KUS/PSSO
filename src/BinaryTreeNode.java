@@ -27,5 +27,27 @@ public class BinaryTreeNode extends TreeNode
         System.out.print(" )");
     }
 
+    @Override
+    public double evaluate() throws Exception {
+        return operation(left.evaluate(), right.evaluate());
+    }
+
+    private double operation(double value1, double value2) throws Exception {
+        switch (label)
+        {
+            case "*":
+                return value1 * value2;
+            case "/":
+                return value1 / value2;
+            case "+":
+                return value1 + value2;
+            case "-":
+                return value1 - value2;
+            case "%":
+                return value1 % value2;
+            default:
+                throw new Exception("Uknown operation \'" + label + "\'");
+        }
+    }
 
 }

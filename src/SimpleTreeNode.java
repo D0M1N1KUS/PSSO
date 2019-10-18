@@ -10,5 +10,10 @@ public class SimpleTreeNode extends TreeNode	{
 	public void inFixPrint()	{
 	    System.out.print(label);
 	}
-	
+
+    @Override
+    public double evaluate() {
+        return (double)Integer.parseInt(label);
+    }
+
 }
