@@ -28,6 +28,13 @@ public class BinaryTreeNode extends TreeNode
     }
 
     @Override
+    public void postFixPrint() {
+        left.postFixPrint();
+        right.postFixPrint();
+        System.out.print(label);
+    }
+
+    @Override
     public double evaluate() throws Exception {
         return operation(left.evaluate(), right.evaluate());
     }

@@ -8,6 +8,7 @@ public abstract class TreeNode	{
 	}
 
 	public abstract void inFixPrint();
+	public abstract void postFixPrint();
 	public abstract double evaluate() throws Exception;
 
 	protected String label;
