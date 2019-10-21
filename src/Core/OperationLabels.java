@@ -1,6 +1,8 @@
-package src.visitor.OperationNodes;
+package src.Core;
 
-import src.visitor.BinaryTreeNode;
+import src.visitor.OperationNodes.*;
+
+import java.lang.reflect.Field;
 
 public class OperationLabels {
     public static final String ADDITION = "+";
@@ -24,4 +26,21 @@ public class OperationLabels {
         throw new Exception("Type \"" + node.getClass().getName() + "\" is not supported!");
     }
 
+    public static boolean isOperator(String label)
+    {
+        Field[] fields = OperationLabels.class.getDeclaredFields();
+
+        for(Field field : fields)
+        {
+            try {
+                if((field.get(OperationLabels.class)) instanceof String)
+                    if(label.equals(field.get(OperationLabels.class)))
+                        return true;
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return false;
+    }
 }

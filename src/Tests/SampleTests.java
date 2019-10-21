@@ -1,6 +1,5 @@
 package src.Tests;
 
-import org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.Assert;
 import src.visitor.BinaryTreeLeaf;

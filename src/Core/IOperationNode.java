@@ -1,4 +1,6 @@
-package src.visitor.OperationNodes;
+package src.Core;
+
+import src.Core.OperationLabels;
 
 public interface IOperationNode {
     int compute(int a, int b);

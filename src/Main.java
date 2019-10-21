@@ -59,10 +59,8 @@ package src;
 
 import src.nopattern.Parser;
 import src.nopattern.TreeNode;
-import src.visitor.BinaryTreeLeaf;
-import src.visitor.BinaryTreeNode;
-import src.visitor.SummationVisitor;
-import src.visitor.TraversalVisitor;
+import src.visitor.Parser.VisitorParser;
+import src.visitor.Visitable;
 
 public class Main
 {
@@ -103,6 +101,11 @@ public class Main
      */
     private static void Client()
     {
+        VisitorParser parser = new VisitorParser();
+        Visitable rootNode = parser.parse("1 + ( 2 - 3 * 4 ) / 5");// spaces are vital!!;
+        Visitable otherRootNode = parser.parse("1 + 5 % 3");
 
+        //System.out.println("inFixPrint:");
+        //rootNode.accept();
     }
 }

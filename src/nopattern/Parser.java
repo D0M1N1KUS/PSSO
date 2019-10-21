@@ -1,5 +1,7 @@
 package src.nopattern;
 
+import src.Core.Miscellaneous;
+
 import java.util.Stack;
 import java.util.StringTokenizer;
 
@@ -29,16 +31,17 @@ public class Parser {
                 //src.nopattern.BinaryTreeNode tree = new src.nopattern.BinaryTreeNode(token);
                 operatorStack.push(token);
             }
-            else if (isInteger(token))
+            else if (Miscellaneous.isInteger(token))
             {
                 SimpleTreeNode tree = new SimpleTreeNode(token);
                 treeStack.push(tree);
             }
-            else if (isOperator(token))
+            else if (Miscellaneous.isOperator(token))
             {
                 //src.nopattern.BinaryTreeNode tree = new src.nopattern.BinaryTreeNode(token);
                 if (operatorStack.empty() || operatorStack.peek().equals("(") ||
-                        priority(operatorStack.peek()) < priority(token))
+                        Miscellaneous.getOperatorPriority(operatorStack.peek()) <
+                                Miscellaneous.getOperatorPriority(token))
                 {
                     operatorStack.push(token);
                 }
@@ -49,7 +52,8 @@ public class Parser {
                         PopConnectPush();
                     }
                     while (!operatorStack.empty() && !operatorStack.peek().equals("(") &&
-                            priority(token) < priority(operatorStack.peek()));
+                            Miscellaneous.getOperatorPriority(operatorStack.peek()) <
+                                    Miscellaneous.getOperatorPriority(token));
 
                     operatorStack.push(token);
                 }
@@ -78,39 +82,4 @@ public class Parser {
         BinaryTreeNode tree = new BinaryTreeNode(operatorStack.pop(), left, right);
         treeStack.push(tree);
     }
-
-	private int priority(String op) {
-        if (op.equals("*"))
-            return 2;
-        else if (op.equals("/"))
-            return 2;
-        else if (op.equals("+"))
-            return 1;
-        else if (op.equals("-"))
-            return 1;
-        else if (op.equals("%"))
-            return 3;
-        else
-            return -1;
-    }
-
-	private boolean isInteger(String integer) {
-        try {
-            Integer.parseInt(integer);
-            return true;
-        }
-        catch (NumberFormatException nfe)
-        {
-            return false;
-        }
-    }
-
-	private boolean isOperator(String op) {
-        boolean isOp = false;
-        for (int i = 0; i < operators.length; i++)
-            if (operators[i].equals(op))
-                isOp = true;
-        return isOp;
-    }
-
 }

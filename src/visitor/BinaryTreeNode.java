@@ -20,8 +20,6 @@ package src.visitor;/* -*- Mode: Java; tab-width: 4; indent-tabs-mode: nil; c-ba
  * Contributor(s):   
  */
 
-import src.visitor.Visitable;
-
 /**
  * Implements a <i>ConcreteElement</i> of the aggregate strcuture. This is a 
  * non-terminal binary tree element.

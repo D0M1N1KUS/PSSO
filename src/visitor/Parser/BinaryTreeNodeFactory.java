@@ -1,11 +1,12 @@
 package src.visitor.Parser;
 
-import src.visitor.BinaryTreeNode;
+import src.Core.OperationLabels;
 import src.visitor.OperationNodes.*;
+import src.visitor.Visitable;
 
 public class BinaryTreeNodeFactory {
 
-    public static BinaryTreeNode get(String nodeLabel, BinaryTreeNode left, BinaryTreeNode right) throws Exception {
+    public static Visitable get(String nodeLabel, Visitable left, Visitable right) throws Exception {
         switch (nodeLabel)
         {
             case OperationLabels.ADDITION:
@@ -19,7 +20,7 @@ public class BinaryTreeNodeFactory {
             case OperationLabels.MODULO:
                 return new ModuloNode(left, right);
             default:
-                throw new Exception("Unknown label \"" + nodeLabel + "\"");
+                throw new Exception("Unknown node-label \"" + nodeLabel + "\"");
         }
     }
 }

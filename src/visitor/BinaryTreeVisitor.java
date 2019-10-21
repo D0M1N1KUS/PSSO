@@ -31,7 +31,10 @@
 
 package src.visitor;
 
-public interface BinaryTreeVisitor { 
+import src.visitor.BinaryTreeLeaf;
+import src.visitor.BinaryTreeNode;
+
+public interface BinaryTreeVisitor {
     
     /**
      * Visits a non-terminal binary tree node.
@@ -39,7 +42,7 @@ public interface BinaryTreeVisitor {
      * @param node the node to visit
      */
      
-	public void visit(BinaryTreeNode node); 
+	public void visit(BinaryTreeNode node);
 
     /**
      * Visits a leaf, which is a terminal tree node.

@@ -1,5 +1,6 @@
 package src.visitor.OperationNodes;
 
+import src.Core.IOperationNode;
 import src.visitor.BinaryTreeNode;
 import src.visitor.Visitable;
 
