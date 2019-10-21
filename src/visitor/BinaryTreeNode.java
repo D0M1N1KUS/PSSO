@@ -36,31 +36,38 @@ public class BinaryTreeNode implements Visitable {
     /**
      * the left subtree
      */
-    
 	protected Visitable left;
 
     /**
      * the right subtree
      */
-    
 	protected Visitable right;
+
+    /**
+     * Creates a non-terminal node of a binary tree.
+     *
+     * @param left the new left subtree.
+     * @param right the new left subtree.
+     */
+	public BinaryTreeNode(Visitable left, Visitable right) {
+		this.left = left;
+		this.right = right;
+	}
 
     /**
      * Accepts a visitor and calls <code>visitRegularNode(Node) on it.
      *
      * @param visitor the NodeVisitor that is to be accepted.
      */
-     
 	public void accept(BinaryTreeVisitor visitor) {
 		visitor.visit(this);
-	}  
-	
+	}
+
 	/**
 	 * Accessor for the left subtree.
 	 *
 	 * @return the left subtree.
 	 */
-	
 	public Visitable getLeft() {
 	    return left;
 	}
@@ -70,20 +77,8 @@ public class BinaryTreeNode implements Visitable {
 	 *
 	 * @return the right subtree.
 	 */
-	
 	public Visitable getRight() {
 	    return right;
 	}
 
-    /**
-     * Creates a non-terminal node of a binary tree. 
-     *
-     * @param left the new left subtree.
-     * @param right the new left subtree.
-     */
-     
-	public BinaryTreeNode(Visitable left, Visitable right) {
-		this.left = left;
-		this.right = right;
-	}
 }

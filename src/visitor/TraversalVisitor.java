@@ -70,6 +70,6 @@ public class TraversalVisitor implements BinaryTreeVisitor {
 	 */
 
 	public String report() {
-		return ">>> TraversalVisitor traversed the tree to: "+result;
+		return result;
 	}
 }

@@ -67,6 +67,6 @@ public class SummationVisitor implements BinaryTreeVisitor {
 	 */
 	  
 	public String report() {
-		return ">>> SummationVisitor collected a sum of: "+sum;
+		return String.valueOf(sum);
 	}
 }

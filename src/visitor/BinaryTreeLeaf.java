@@ -22,8 +22,6 @@
 
 package src.visitor;
 
-import src.visitor.Visitable;
-
 /**
  * Implements a <i>ConcreteElement</i> of the aggregate strcuture. This is a 
  * terminal binary tree element (leaf).
@@ -32,41 +30,36 @@ import src.visitor.Visitable;
  * @author  Gregor Kiczales
  * @version 1.1, 02/17/04
  */
-
 public class BinaryTreeLeaf implements Visitable {
     
     /**
      * the value stored in this leaf
      */
-
 	protected int value;
-	
-    /**
-     * Accepts a visitor and calls <code>visitLeaf(Node) on it.
-     *
-     * @param visitor the NodeVisitor that is to be accepted.
-     */
-     
-	public void accept(BinaryTreeVisitor visitor) {
-		visitor.visit(this);
-	}
 	
     /**
      * Creates a new <code>BinaryTreeLeaf</code> with the given value.
      *
      * @param value the value of the leaf
      */
-    
 	public BinaryTreeLeaf(int value) {
 		this.value = value;
-	} 
-	
+	}
+
+    /**
+     * Accepts a visitor and calls <code>visitLeaf(Node) on it.
+     *
+     * @param visitor the NodeVisitor that is to be accepted.
+     */
+	public void accept(BinaryTreeVisitor visitor) {
+		visitor.visit(this);
+	}
+
 	/** 
 	 * Accessor for the leaf's value
 	 *
 	 * @return the leaf's value
 	 */
-	 
 	public int getValue() {
 	    return value;
 	}
