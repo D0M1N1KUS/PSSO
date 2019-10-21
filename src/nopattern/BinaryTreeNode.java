@@ -1,4 +1,4 @@
-package src;
+package src.nopattern;
 //Tree node that contains two children
 
 public class BinaryTreeNode extends TreeNode

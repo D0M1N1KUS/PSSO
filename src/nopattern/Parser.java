@@ -1,4 +1,4 @@
-package src;
+package src.nopattern;
 
 import java.util.Stack;
 import java.util.StringTokenizer;
@@ -26,7 +26,7 @@ public class Parser {
 
             if (token.equals("("))
             {
-                //src.BinaryTreeNode tree = new src.BinaryTreeNode(token);
+                //src.nopattern.BinaryTreeNode tree = new src.nopattern.BinaryTreeNode(token);
                 operatorStack.push(token);
             }
             else if (isInteger(token))
@@ -36,7 +36,7 @@ public class Parser {
             }
             else if (isOperator(token))
             {
-                //src.BinaryTreeNode tree = new src.BinaryTreeNode(token);
+                //src.nopattern.BinaryTreeNode tree = new src.nopattern.BinaryTreeNode(token);
                 if (operatorStack.empty() || operatorStack.peek().equals("(") ||
                         priority(operatorStack.peek()) < priority(token))
                 {

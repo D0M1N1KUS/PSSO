@@ -1,4 +1,4 @@
-package src;
+package src.nopattern;
 //abstract superclass of tree element types
 
 public abstract class TreeNode	{

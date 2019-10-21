@@ -1,4 +1,4 @@
-package src;
+package src.nopattern;
 //Define tree element with no children
 
 public class SimpleTreeNode extends TreeNode	{
