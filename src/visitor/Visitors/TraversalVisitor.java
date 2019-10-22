@@ -29,7 +29,11 @@
  * @version 1.1, 02/17/04
  */
 
-package src.visitor;
+package src.visitor.Visitors;
+
+import src.Core.IOperationNode;
+import src.visitor.BinaryTreeLeaf;
+import src.visitor.BinaryTreeVisitor;
 
 public class TraversalVisitor implements BinaryTreeVisitor {
     
@@ -45,7 +49,7 @@ public class TraversalVisitor implements BinaryTreeVisitor {
      * @param node the regular node
      */
      
-	public void visit(BinaryTreeNode node) {
+	public void visit(IOperationNode node) {
 		result += "{"; 
 		node.getLeft().accept(this);
 		result += ",";

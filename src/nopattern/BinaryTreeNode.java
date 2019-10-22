@@ -37,8 +37,8 @@ public class BinaryTreeNode extends TreeNode
     @Override
     public void preFixPrint() {
         System.out.print(label);
-        left.postFixPrint();
-        right.postFixPrint();
+        left.preFixPrint();
+        right.preFixPrint();
     }
 
     @Override

@@ -61,6 +61,10 @@ import src.nopattern.Parser;
 import src.nopattern.TreeNode;
 import src.visitor.Parser.VisitorParser;
 import src.visitor.Visitable;
+import src.visitor.Visitors.EvaluateVisitor;
+import src.visitor.Visitors.InFixPrintVisitor;
+import src.visitor.Visitors.PostFixPrintVisitor;
+import src.visitor.Visitors.PreFixPrintVisitor;
 
 public class Main
 {
@@ -68,7 +72,7 @@ public class Main
      * @param args the command-line parameters, unused
      */
     public static void main(String[] args)	{
-        //Parser();
+        Parser();
         Client();
     }
 
@@ -77,24 +81,11 @@ public class Main
         TreeNode rootNode = parser.parse("1 + ( 2 - 3 * 4 ) / 5");// spaces are vital!!;
         TreeNode otherRootNode = parser.parse("1 + 5 % 3");
 
-        System.out.println("inFixPrint:");
-        rootNode.inFixPrint();
-        System.out.println("\npostFixPrint:");
-        rootNode.postFixPrint();
-        System.out.println("\npreFixPrint:");
-        rootNode.preFixPrint();
-        System.out.println();
-
-        try{
-            System.out.println("Evaluation: " + String.valueOf(rootNode.evaluate()));
-            System.out.println("Evaluation: " + String.valueOf(otherRootNode.evaluate()));
-        }
-        catch (Exception e)
-        {
-            System.out.print(e);
-        }
+        System.out.print("##########NOPATTERN_1##########");
+        printStuffNopattern(rootNode);
+        System.out.println("##########NOPATTERN_2##########");
+        printStuffNopattern(otherRootNode);
     }
-
 
     /**
      * Implements the driver for the Visitor design pattern example.<p>
@@ -105,7 +96,49 @@ public class Main
         Visitable rootNode = parser.parse("1 + ( 2 - 3 * 4 ) / 5");// spaces are vital!!;
         Visitable otherRootNode = parser.parse("1 + 5 % 3");
 
-        //System.out.println("inFixPrint:");
-        //rootNode.accept();
+        System.out.print("##########PATTERN_1##########");
+        printStuffPattern(rootNode);
+        System.out.print("##########PATTERN_2##########");
+        printStuffPattern(otherRootNode);
+    }
+
+    private static void printStuffNopattern(TreeNode rootNode) {
+        System.out.println("inFixPrint:");
+        rootNode.inFixPrint();
+        System.out.println("\npreFixPrint:");
+        rootNode.preFixPrint();
+        System.out.println("\npostFixPrint:");
+        rootNode.postFixPrint();
+        System.out.println();
+
+        try{
+            System.out.println("Evaluation: " + String.valueOf(rootNode.evaluate()));
+        }
+        catch (Exception e)
+        {
+            System.out.print(e);
+        }
+    }
+
+    private static void printStuffPattern(Visitable rootNode) {
+        System.out.println("inFixPrint:");
+        InFixPrintVisitor inFixPrintVisitor = new InFixPrintVisitor();
+        rootNode.accept(inFixPrintVisitor);
+        System.out.println(inFixPrintVisitor.report());
+
+        System.out.print("Evaluation: ");
+        EvaluateVisitor evaluateVisitor = new EvaluateVisitor();
+        rootNode.accept(evaluateVisitor);
+        System.out.println(evaluateVisitor.report());
+
+        System.out.println("preFixPrint:");
+        PreFixPrintVisitor preFixPrintVisitor = new PreFixPrintVisitor();
+        rootNode.accept(preFixPrintVisitor);
+        System.out.println(preFixPrintVisitor.report());
+
+        System.out.println("postFixPrint:");
+        PostFixPrintVisitor postFixPrintVisitor = new PostFixPrintVisitor();
+        rootNode.accept(postFixPrintVisitor);
+        System.out.println(postFixPrintVisitor.report());
     }
 }

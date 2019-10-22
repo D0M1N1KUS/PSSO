@@ -29,7 +29,11 @@
  * @version 1.1, 02/17/04
  */
 
-package src.visitor;
+package src.visitor.Visitors;
+
+import src.Core.IOperationNode;
+import src.visitor.BinaryTreeLeaf;
+import src.visitor.BinaryTreeVisitor;
 
 public class SummationVisitor implements BinaryTreeVisitor {
     
@@ -45,9 +49,9 @@ public class SummationVisitor implements BinaryTreeVisitor {
      * @param node the regular node
      */
      
-	public void visit(BinaryTreeNode node) {
-		node.left.accept(this);
-		node.right.accept(this);
+	public void visit(IOperationNode node) {
+		node.getLeft().accept(this);
+		node.getRight().accept(this);
 	}
 		
     /**

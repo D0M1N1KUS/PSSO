@@ -31,6 +31,7 @@
 
 package src.visitor;
 
+import src.Core.IOperationNode;
 import src.visitor.BinaryTreeLeaf;
 import src.visitor.BinaryTreeNode;
 
@@ -42,7 +43,7 @@ public interface BinaryTreeVisitor {
      * @param node the node to visit
      */
      
-	public void visit(BinaryTreeNode node);
+	public void visit(IOperationNode node);
 
     /**
      * Visits a leaf, which is a terminal tree node.

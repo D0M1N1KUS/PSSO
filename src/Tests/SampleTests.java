@@ -4,8 +4,9 @@ import org.junit.Test;
 import org.junit.Assert;
 import src.visitor.BinaryTreeLeaf;
 import src.visitor.BinaryTreeNode;
-import src.visitor.SummationVisitor;
-import src.visitor.TraversalVisitor;
+import src.visitor.OperationNodes.AdditionNode;
+import src.visitor.Visitors.SummationVisitor;
+import src.visitor.Visitors.TraversalVisitor;
 
 public class SampleTests {
 
@@ -39,8 +40,8 @@ public class SampleTests {
         BinaryTreeLeaf one   = new BinaryTreeLeaf(1);
         BinaryTreeLeaf two   = new BinaryTreeLeaf(2);
         BinaryTreeLeaf three = new BinaryTreeLeaf(3);
-        BinaryTreeNode regN = new BinaryTreeNode(one, two);
-        return new BinaryTreeNode(regN, three);
+        BinaryTreeNode regN = new AdditionNode(one, two);
+        return new AdditionNode(regN, three);
     }
 
 

@@ -20,6 +20,8 @@ package src.visitor;/* -*- Mode: Java; tab-width: 4; indent-tabs-mode: nil; c-ba
  * Contributor(s):   
  */
 
+import src.Core.IOperationNode;
+
 /**
  * Implements a <i>ConcreteElement</i> of the aggregate strcuture. This is a 
  * non-terminal binary tree element.
@@ -29,7 +31,7 @@ package src.visitor;/* -*- Mode: Java; tab-width: 4; indent-tabs-mode: nil; c-ba
  * @version 1.1, 02/17/04
  */
 
-public class BinaryTreeNode implements Visitable {
+public abstract class BinaryTreeNode implements IOperationNode {
     
     /**
      * the left subtree
