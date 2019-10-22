@@ -49,10 +49,10 @@ public class VisitorParser {
         }
     }
 
-    private void tryToInterpretToken(String token) {
-
-        try {
-
+    private void tryToInterpretToken(String token)
+    {
+        try
+        {
             interpretToken(token);
         }
         catch (Exception e)
@@ -63,7 +63,8 @@ public class VisitorParser {
         }
     }
 
-    private void interpretToken(String token) throws Exception {
+    private void interpretToken(String token) throws Exception
+    {
         if (token.equals(OtherTokens.OPEN_BRACKET))
             operatorStack.push(token);
         else if (token.equals(OtherTokens.CLOSE_BRACKET))
@@ -79,6 +80,7 @@ public class VisitorParser {
     private void popGroup() throws Exception {
         while(!operatorStack.peek().equals(OtherTokens.OPEN_BRACKET))
             popConnectPush();
+        operatorStack.pop();
     }
 
     private void popConnectPush() throws Exception {
@@ -107,7 +109,7 @@ public class VisitorParser {
     }
 
     private boolean operatorHasLowerPriorityThanTopOfOperatorStack(String operator) {
-        return Miscellaneous.getOperatorPriority(operator) <
+        return Miscellaneous.getOperatorPriority(operator) >
                 Miscellaneous.getOperatorPriority(operatorStack.peek());
     }
 

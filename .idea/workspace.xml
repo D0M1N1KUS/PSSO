@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c581471-2aa4-427d-8d40-eab99c738655" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Core/Miscellaneous.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Tests/OperationLabelsTests.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/visitor/Parser/OtherTokens.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/SampleTests.java" afterPath="$PROJECT_DIR$/src/Tests/SampleTests.java" />
-      <change beforePath="$PROJECT_DIR$/src/nopattern/Parser.java" afterPath="$PROJECT_DIR$/src/nopattern/Parser.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/BinaryTreeNode.java" afterPath="$PROJECT_DIR$/src/visitor/BinaryTreeNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/BinaryTreeVisitor.java" afterPath="$PROJECT_DIR$/src/visitor/BinaryTreeVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/AdditionNode.java" afterPath="$PROJECT_DIR$/src/visitor/OperationNodes/AdditionNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/DivisionNode.java" afterPath="$PROJECT_DIR$/src/visitor/OperationNodes/DivisionNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/IOperationNode.java" afterPath="$PROJECT_DIR$/src/Core/IOperationNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/ModuloNode.java" afterPath="$PROJECT_DIR$/src/visitor/OperationNodes/ModuloNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/MultiplicationNode.java" afterPath="$PROJECT_DIR$/src/visitor/OperationNodes/MultiplicationNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/OperationLabels.java" afterPath="$PROJECT_DIR$/src/Core/OperationLabels.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/OperationNodes/SubtractionNode.java" afterPath="$PROJECT_DIR$/src/visitor/OperationNodes/SubtractionNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Parser/BinaryTreeNodeFactory.java" afterPath="$PROJECT_DIR$/src/visitor/Parser/BinaryTreeNodeFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Parser/Parser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java" afterPath="$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +17,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="104" column="59" lean-forward="false" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
+                <state relative-caret-position="426">
+                  <caret line="107" column="44" lean-forward="true" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#3701#0" expanded="true" />
                     <element signature="imports" expanded="true" />
@@ -77,11 +60,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="VisitorParser.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="VisitorParser.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-68">
-                  <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+                <state relative-caret-position="477">
+                  <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -92,8 +75,8 @@
           <file leaf-file-name="OtherTokens.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/visitor/Parser/OtherTokens.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -102,7 +85,7 @@
           <file leaf-file-name="Miscellaneous.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Core/Miscellaneous.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
+                <state relative-caret-position="225">
                   <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
                   <folding>
                     <element signature="e#333#334#0" expanded="true" />
@@ -115,8 +98,8 @@
           <file leaf-file-name="BinaryTreeNode.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="507">
-                  <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+                <state relative-caret-position="885">
+                  <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
                   <folding>
                     <element signature="e#1761#1762#0" expanded="true" />
                     <element signature="e#1787#1788#0" expanded="true" />
@@ -132,12 +115,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nopattern/Parser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+                <state relative-caret-position="402">
+                  <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -147,7 +130,7 @@
             <entry file="file://$PROJECT_DIR$/src/Tests/SampleTests.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="360">
-                  <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+                  <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -167,7 +150,7 @@
             <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeLeaf.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
-                  <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+                  <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -254,8 +237,8 @@
         <option value="$PROJECT_DIR$/src/visitor/TraversalVisitor.java" />
         <option value="$PROJECT_DIR$/src/visitor/Parser/OtherTokens.java" />
         <option value="$PROJECT_DIR$/src/Core/OperationLabels.java" />
-        <option value="$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java" />
       </list>
     </option>
   </component>
@@ -315,7 +298,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,9 +355,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,8 +608,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13219616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -638,6 +620,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -693,9 +676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="68" lean-forward="false" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,20 +684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="e#148#149#0" expanded="false" />
-            <element signature="e#167#168#0" expanded="false" />
-            <element signature="e#196#197#0" expanded="false" />
-            <element signature="e#218#219#0" expanded="false" />
-            <element signature="e#266#267#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#488#489#0" expanded="false" />
-            <element signature="e#542#543#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -747,14 +715,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/Client.java" />
     <entry file="file://$PROJECT_DIR$/src/nopattern/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -845,24 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeLeaf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/Visitable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#1257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/visitor/OperationNodes/AdditionNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -872,56 +815,6 @@
             <element signature="e#464#465#0" expanded="true" />
             <element signature="e#518#519#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding>
-            <element signature="e#1761#1762#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1897#1898#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#2031#2032#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/Parser/OtherTokens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/TraversalVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Miscellaneous.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -947,6 +840,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Miscellaneous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding>
+            <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#2031#2032#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/SampleTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nopattern/BinaryTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -955,13 +890,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/visitor/BinaryTreeLeaf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="104" column="59" lean-forward="false" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
+        <state relative-caret-position="270">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/Visitable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding>
-            <element signature="e#0#3701#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,6 +918,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/TraversalVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/Parser/OtherTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/Programs/Java/jdk1.8.0_121/src.zip!/java/util/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -984,27 +942,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/SampleTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nopattern/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        <state relative-caret-position="402">
+          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/visitor/Parser/VisitorParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="477">
+          <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="107" column="44" lean-forward="true" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#3701#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
